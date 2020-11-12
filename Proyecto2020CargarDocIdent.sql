@@ -1,6 +1,6 @@
 USE [Proyecto];
 GO
-DROP Procedure  IF EXISTS dbo.CargarTipoDoc;
+DROP PROCEDURE  IF EXISTS dbo.CargarTipoDoc;
 GO
 CREATE PROCEDURE dbo.CargarTipoDoc
 AS
