@@ -26,7 +26,7 @@ SET NOCOUNT ON
 			, Porcentaje [INT]'@Porcentaje'
 			);						--Se ingresan los datos a la tabla variable
 		
-		--Pasar datos de la tabla variable a la tablaCuentaAhorro
+		--Pasar datos de la tabla variable a la Beneficiario
 		DECLARE 
 			@lo1 INT
 			, @hi1 INT
