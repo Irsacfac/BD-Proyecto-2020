@@ -10,7 +10,7 @@ SET NOCOUNT ON
 		DECLARE
 			@tipo_Documento XML = NULL
 			, @doc INT = 0
-		SELECT @tipo_Documento = od	FROM OPENROWSET (BULK 'D:\S3\Proyecto2020\Datos_Tarea1 v2.xml', SINGLE_BLOB) AS TiposDoc(od) --pone la direccion donde se encuentra
+		SELECT @tipo_Documento = od	FROM OPENROWSET (BULK 'D:\S3\Proyecto2020\Datos_Tarea1 v2.1.xml', SINGLE_BLOB) AS TiposDoc(od) --pone la direccion donde se encuentra
 		EXEC sp_xml_preparedocument @doc OUTPUT, @tipo_Documento
 		INSERT INTO [dbo].[Personas](TipoDocumentoIdentidadId
 									, Nombre
